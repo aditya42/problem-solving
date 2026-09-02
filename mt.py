@@ -5,7 +5,6 @@ from itertools import zip_longest
 
 WORD_PATTERN = re.compile(r"[^\W\d_]+(?:['`][^\W\d_]+)*", re.UNICODE)
 
-
 def word_frequency(text: str) -> dict[str, int]:
     normalized = text.casefold()
 

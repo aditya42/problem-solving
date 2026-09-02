@@ -4,8 +4,7 @@ from collections import Counter, defaultdict, OrderedDict, deque
 from dataclasses import dataclass
 import heapq
 import unittest
-from multiprocessing import dummy
-from typing import Optional, cast
+from typing import Optional
 
 
 def two_sum(nums: list[int], target: int) -> list[int]:
