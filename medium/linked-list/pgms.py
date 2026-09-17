@@ -1,4 +1,3 @@
-from sys import get_asyncgen_hooks
 from typing import Optional
 
 from medium.BST.pgms import ListNode
@@ -92,6 +91,18 @@ def reorder_list(head: Optional[ListNode]) -> None:
         first.next = second
         second.next = n1
         first, second = n1, n2
+
+
+def reverse_linked_list(head: Optional[ListNode]) -> Optional[ListNode]:
+    """78. Reverse Linked List. Time O(n), Space O(1)."""
+    prev = None
+    current = head
+    while current:
+        nxt = current.next
+        current.next = prev
+        prev = current
+        current = nxt
+    return prev
 
 
 def flatten_multilevel_doubly_linked_list(
