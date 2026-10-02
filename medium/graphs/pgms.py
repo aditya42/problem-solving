@@ -1,4 +1,3 @@
-from multiprocessing import dummy
 from typing import Optional
 
 from easy.graphs.pgms import reverse_linked_list
@@ -6,7 +5,7 @@ from medium.BST.pgms import ListNode
 
 
 def add_two_numbers(
-    l1: Optional[ListNode], l2: Optional[LilyPondStyle]
+    l1: Optional[ListNode], l2: Optional[ListNode]
 ) -> Optional[ListNode]:
     dummy = tail = ListNode()
     carry = 0
